@@ -1,0 +1,14 @@
+body {
+  min-height: 100vh;
+  background-image: url("../images/background.jpg");
+   background-repeat: no-repeat; /* Prevents the image from tiling/repeating */
+  background-size: cover; /* Scales the image to cover the entire container */
+  background-position: center center; /* Centers the image */
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
