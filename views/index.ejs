@@ -15,7 +15,7 @@
 </head>
 
 <body class="d-flex justify-content-center align-items-center vh-100">
-  <div class="glass container">
+  <div class="card container" id="glass">
     <div class="row">
       <div class="col">
         <h1 class="text-center text">Anime Wisdom</h1>
@@ -29,10 +29,14 @@
           <button type="submit" class="btn btn-primary ms-2">Submit</button>
         </form>
       </div>
-
-      <!-- <div class="col">
-          
-        </div> -->
+      <% if (locals.wisdom && locals.character) { %>
+    <blockquote class="col">
+        <p>"<%= wisdom %>"</p>
+        <p>— <span class="small-name"><%= character %></span></p>
+    </blockquote>
+     
+<% } %>
+      
     </div>
   </div>
 
